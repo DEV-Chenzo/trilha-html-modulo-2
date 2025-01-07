@@ -16,11 +16,13 @@ body {
 .main {
     display: flex;
     flex-flow: column;
+    text-align: center;
+    justify-content: center;
     width: 85%;
 }
 .menu {
     width: 15%;
-    background-color: aqua;
+    background-color: red;
     padding: 10px 20px 0px;
 }
 .header {
@@ -30,7 +32,7 @@ body {
 .content {
     background-color: white;
     min-height: 300px;
-    padding: 20px;
+
 }
 .footer {
     background-color: rgb(99, 56, 240);
