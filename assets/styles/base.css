@@ -26,11 +26,21 @@ body {
 }
 .menu {
     width: 15%;
-    background-color: red;
+    background-color: #ff3939;
     padding: 10px 20px 0px;
 }
+
+.menu ul.navegation li {
+    margin: auto;
+    padding: 8px 0px 0px;
+}
+
+.menu ul.navegation li a {
+    text-decoration: none;
+    color: white;
+}
 .header {
-    background-color: rgb(5, 108, 108);
+    background-color: #056c6c;
     min-height: 150px;
 }
 .content {
@@ -39,7 +49,11 @@ body {
 
 }
 .footer {
-    background-color: rgb(99, 56, 240);
-    min-height: 150px;
+    background-color: #c00202;
+    min-height: 130px;
 }
 
+img {
+    width: 100%;
+    background-size: cover;
+}
