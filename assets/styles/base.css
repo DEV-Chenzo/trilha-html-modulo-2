@@ -1,59 +1,83 @@
-html, body {
-    margin: 0;
-}
-body {
-    background-color: #f1f1f1;
-    display: flex;
-    justify-content: center;
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Enriqueta:wght@400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Cardo", serif;
+  --font-alternate: "Enriqueta", serif;
 }
 
-.navegation {
-    list-style: none;
+html,
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+}
+
+body {
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
 }
 
 .wrapper {
-    width: 1200px;
-    display: flex;
-    margin: 0 auto;
-    background-color: aquamarine;
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
 }
+
 .main {
-    display: flex;
-    flex-flow: column;
-    text-align: center;
-    justify-content: center;
-    width: 85%;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  justify-content: center;
+  width: 85%;
 }
+
 .menu {
-    width: 15%;
-    background-color: #ff3939;
-    padding: 10px 20px 0px;
+  width: 15%;
+  background-color: #fa2020;
+  padding: 10px 20px 0px;
+  text-align: center;
+  box-shadow: 3px 1px 10px #0000004f;
+  z-index: 1;
+}
+
+.menu ul.navegation {
+  list-style: none;
+  width: 100%;
+  padding: 0px;
 }
 
 .menu ul.navegation li {
-    margin: auto;
-    padding: 8px 0px 0px;
+  padding: 10px 0px 0px;
 }
 
 .menu ul.navegation li a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
-.header {
-    background-color: #056c6c;
-    min-height: 150px;
-}
-.content {
-    background-color: white;
-    min-height: 300px;
 
+.header {
+  min-height: 150px;
 }
+
+.content {
+  min-height: 300px;
+  padding: 10px;
+}
+
 .footer {
-    background-color: #c00202;
-    min-height: 130px;
+  background-color: #c00202;
+  min-height: 120px;
+  color: #f1f1f1;
+}
+
+.footer p {
+  font-family: var(--font-alternate);
 }
 
 img {
-    width: 100%;
-    background-size: cover;
+  background-size: cover;
+  object-fit: cover;
 }

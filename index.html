@@ -11,6 +11,27 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="assets/styles/base.css" />
+    <style>
+      img.img-header {
+        width: 600px;
+        height: 400px;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("assets/images/");
+        background-size: cover;
+        min-height: 600px;
+      }
+
+      .content p {
+        font-weight: 700;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -32,7 +53,11 @@
         <div class="header">
           <!-- Aqui vai o seu header -->
           <div id="logo-header">
-            <img src="assets/images/cme-logo.png" alt="Logo CME" />
+            <img
+              class="img-header"
+              src="assets/images/cme-logo.png"
+              alt="Logo CME"
+            />
           </div>
           <!-- Fim do header -->
         </div>
@@ -52,8 +77,8 @@
           <!-- Aqui vai o seu rodapé -->
           <h3>Copyright &copy; 2024</h3>
           <p>
-            Todos os direitos reservados e usados somente para fins educativos e nada
-            mais
+            Todos os direitos reservados e usados somente para fins educativos e
+            nada mais
           </p>
           <p>Esta empresa não existe de verdade</p>
           <!-- Fim do rodapé -->
