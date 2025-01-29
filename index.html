@@ -20,16 +20,26 @@
       .content {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        background-image: url("assets/images/");
+        align-items: left;
+        justify-content: center;
+        background-image: url("assets/images/fundo/background-01.png");
         background-size: cover;
-        min-height: 600px;
+        background-repeat: no-repeat;
       }
 
-      .content p {
+      .content .left {
+        width: 50%;
+      }
+
+      .content .left h1 {
+        text-align: left;
+        font-size: 1.5rem;
+      }
+
+      .content .left p {
         font-weight: 700;
         font-size: 1.5rem;
-        text-align: center;
+        text-align: left;
       }
     </style>
   </head>
@@ -64,13 +74,22 @@
 
         <div class="content">
           <!-- Aqui vai o seu conteúdo -->
-          <p>
-            O Centro Médico Especializado <strong>CME</strong> é uma clínica
-            médica com mais de 15 anos de atuação na Setor de Saúde com
-            especialização em areas como : Pediatria, Oftalmologia e Psicologia.
-            Alem de possuir atendimentos a serviços gerais na área
-          </p>
-          <!-- Fim do conteúdo -->
+          <div class="fundo">
+            <div class="left">
+              <h1>
+                Bem Vindo ao <br />
+                Centro Médico Especializado <strong>CME</strong>
+              </h1>
+              <p>
+                uma clínica médica com mais de 15 anos de atuação na Setor de
+                Saúde com especialização em areas como : Pediatria, Oftalmologia
+                e Psicologia. Além de possuir atendimentos a serviços gerais na
+                área da
+              </p>
+            </div>
+          </div>
+          <!-- Fim dos
+        </p> conteúdo -->
         </div>
 
         <div class="footer">

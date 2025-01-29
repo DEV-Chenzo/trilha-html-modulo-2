@@ -15,7 +15,7 @@ body {
 }
 
 body {
-  background-color: #f1f1f1;
+  background-color: #fa6d6d27;
   display: flex;
   justify-content: center;
 }
@@ -27,6 +27,7 @@ body {
 }
 
 .main {
+  background-color: #f1f1f1;
   display: flex;
   flex-flow: column;
   text-align: center;
@@ -36,6 +37,7 @@ body {
 
 .menu {
   width: 15%;
+  font-weight: bolder;
   background-color: #fa2020;
   padding: 10px 20px 0px;
   text-align: center;
@@ -50,7 +52,7 @@ body {
 }
 
 .menu ul.navegation li {
-  padding: 10px 0px 0px;
+  padding: 25px 0px 0px;
 }
 
 .menu ul.navegation li a {
@@ -63,6 +65,7 @@ body {
 }
 
 .content {
+  background-color: #f1f1f1;
   min-height: 300px;
   padding: 10px;
 }
