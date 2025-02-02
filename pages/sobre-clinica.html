@@ -11,6 +11,38 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="../assets/styles/base.css" />
+    <style>
+      div.content {
+        background-color: rgb(255, 228, 196);
+      }
+      .content div.sobre {
+        color: #000000;
+        margin-bottom: 30px;
+        padding: 20px;
+        border-radius: 10px 25px 38% 0px;
+        font-size: 1rem;
+        background-color: rgb(255, 196, 196);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        display: grid;
+        align-items: center;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr;
+        gap: 10px;
+
+      }
+
+      .content div.sobre h1, .content div.sobre h2 {
+        text-align: left;
+        font-size: clamp(1rem, 1.5rem, 1.7rem);
+      }
+
+      .content div.sobre p {
+        text-align: left;
+      } 
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -31,7 +63,7 @@
           <!-- Aqui vai o seu header -->
           <div id="logo-header">
             <img
-              class="img-header"
+              class="imgs-header"
               src="../assets/images/header-sobre-cme.png"
               alt="CME-prioridades"
             />
@@ -41,35 +73,39 @@
 
         <div class="content">
           <!-- Aqui vai o seu conteúdo -->
-          <h1>Sobre a Clínica</h1>
-          <p>
-            Com atendimentos particulares, o
-            <strong>Centro Médico Especializado CME</strong> oferece uma
-            abordagem completa para cuidar da sua saúde. Com uma equipe
-            multidisciplinar de profissionais altamente qualificados,
-            proporcionamos um atendimento personalizado e de excelência.
-          </p>
-          <h2>Nosso compromisso:</h2>
-          <p>
-            Promover a saúde e o bem-estar de nossos pacientes, através de um
-            atendimento de qualidade e com foco na prevenção de doenças.
-          </p>
-          <h2>O que oferecemos:</h2>
-          <ul>
-            <li>
-              <strong>Consultas médicas:</strong> Avaliação completa da sua
-              saúde, diagnóstico preciso e tratamento eficaz de diversas
-              doenças.
-            </li>
-            <li>
-              <strong>Exames laboratoriais:</strong> Análises clínicas para um
-              diagnóstico mais preciso e acompanhamento da sua saúde.
-            </li>
-            <li>
-              <strong>Educação em saúde:</strong> Palestras e workshops sobre
-              diversos temas relacionados à saúde e bem-estar.
-            </li>
-          </ul>
+          <div class="sobre">
+            <h1>Sobre a Clínica</h1>
+            <p>
+              Com atendimentos particulares, o
+              <strong>Centro Médico Especializado CME</strong> oferece uma
+              abordagem completa para cuidar da sua saúde. Com uma equipe
+              multidisciplinar de profissionais altamente qualificados,
+              proporcionamos um atendimento personalizado e de excelência.
+            </p>
+            <h2>Nosso compromisso:</h2>
+            <p>
+              Promover a saúde e o bem-estar de nossos pacientes, através de um
+              atendimento de qualidade e com foco na prevenção de doenças.
+            </p>
+          </div>
+          <article>
+            <h2>O que oferecemos:</h2>
+            <ul>
+              <li>
+                <strong>Consultas médicas:</strong> Avaliação completa da sua
+                saúde, diagnóstico preciso e tratamento eficaz de diversas
+                doenças.
+              </li>
+              <li>
+                <strong>Exames laboratoriais:</strong> Análises clínicas para um
+                diagnóstico mais preciso e acompanhamento da sua saúde.
+              </li>
+              <li>
+                <strong>Educação em saúde:</strong> Palestras e workshops sobre
+                diversos temas relacionados à saúde e bem-estar.
+              </li>
+            </ul>
+          </article>
           <h2>Nosso diferencial:</h2>
           <div class="barra">
             <span class="destaque">Atendimento humanizado:</span> Tratamos cada

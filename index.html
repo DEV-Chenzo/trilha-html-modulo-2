@@ -12,33 +12,48 @@
     />
     <link rel="stylesheet" href="assets/styles/base.css" />
     <style>
-      img.img-header {
+      img.imgs-header {
         width: 600px;
         height: 400px;
       }
 
       .content {
+        padding-top: 10px;
+        padding-bottom: 118px;
         display: flex;
         flex-direction: column;
         align-items: left;
         justify-content: center;
         background-image: url("assets/images/fundo/background-01.png");
-        background-size: cover;
+        background-size: 100%;
         background-repeat: no-repeat;
       }
 
       .content .left {
-        width: 50%;
+        width: 45%;
+        padding: 20px;
+        color: aliceblue;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.342);
+        position: relative;
+        top: 23%;
       }
 
       .content .left h1 {
         text-align: left;
-        font-size: 1.5rem;
+        font-size: clamp(1rem, 1.5rem, 1.7rem);
+        margin-bottom: 40px;
+      }
+
+      .content .left strong {
+        text-align: center;
+        display: block;
+        color: rgb(209, 41, 41);
+        background-color: aliceblue;
       }
 
       .content .left p {
         font-weight: 700;
-        font-size: 1.5rem;
+        font-size:clamp(0.5rem, 1rem, 1.2rem);
         text-align: left;
       }
     </style>
@@ -64,7 +79,7 @@
           <!-- Aqui vai o seu header -->
           <div id="logo-header">
             <img
-              class="img-header"
+              class="imgs-header"
               src="assets/images/cme-logo.png"
               alt="Logo CME"
             />
