@@ -12,26 +12,38 @@
     />
     <link rel="stylesheet" href="../assets/styles/base.css" />
     <style>
+      .content {
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        padding: 10px;
+        color: white;
+        background-color: red;
+      }
+
       table {
         margin: auto;
         width: clamp(10rem, 800px, 1000px);
         height: clamp(100px, 400px, 600px);
-        border-collapse: collapse;
+        border-collapse: separate;
+        border-spacing: 0;
       }
 
-      td,
       th {
         border-spacing: 0px;
-        border: 1px solid transparent;
+        border: 2px solid transparent;
+        text-align: center;
       }
 
-      table tbody td  {
-        border-image: linear-gradient(
-            to left,
-            rgb(249, 212, 35) 10%,
-            rgb(255, 78, 80) 100%
-          );
-          border-image-slice: 10 ;          
+      tr td {
+        border: 2px solid rgb(255, 72, 0);
+        border-top: transparent;
+        border-right: transparent;
+      }
+
+      tr td:last-child {
+        border-right: 2px solid rgb(255, 72, 0);
       }
 
       tr th {
@@ -48,7 +60,7 @@
         background-image: linear-gradient(
           to left,
           rgb(249, 212, 35) 10%,
-          rgb(255, 78, 80) 100%
+          rgb(250, 14, 18) 100%
         );
         -webkit-background-clip: text;
       }
@@ -60,16 +72,26 @@
         background-image: linear-gradient(
           to left,
           rgb(249, 212, 35) 10%,
-          rgb(255, 78, 80) 100%
+          rgb(245, 22, 26) 100%
         );
       }
 
       thead th.serviços {
-        border-radius: 20px 0px 0px 0px;
+        border-radius: 10px 0px 0px 0px;
       }
 
       thead th.feriados {
-        border-radius: 0px 20px 0px 0px;
+        border-radius: 0px 10px 0px 0px;
+      }
+      tbody tr td {
+        color: transparent;
+        font-weight: 600;
+        background-image: linear-gradient(
+          to left,
+          rgb(249, 212, 35) 10%,
+          rgb(250, 29, 33) 100%);
+        -webkit-background-clip: text;
+
       }
     </style>
   </head>
