@@ -13,17 +13,20 @@
     <link rel="stylesheet" href="../assets/styles/base.css" />
     <style>
       div.content {
-        background-color: rgb(255, 228, 196);
+        background-color: rgb(254, 232, 232);
       }
       .content div.sobre {
-        color: #000000;
+        color: rgb(253, 239, 239);
+        text-shadow: 2px 2px 3px rgba(156, 5, 5, 0.603);
+
         margin-bottom: 30px;
         padding: 20px;
         border-radius: 10px 25px 38% 0px;
         font-size: 1rem;
-        background-color: rgb(255, 196, 196);
+        background-color: rgb(250, 133, 133);
         background-size: cover;
         background-repeat: no-repeat;
+        box-shadow: 3px 2px 5px rgba(131, 2, 2, 0.336);
 
         display: grid;
         align-items: center;
@@ -31,17 +34,84 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.5fr 1fr;
         gap: 10px;
-
       }
 
-      .content div.sobre h1, .content div.sobre h2 {
+      .content div.sobre h1,
+      .content div.sobre h2 {
         text-align: left;
         font-size: clamp(1rem, 1.5rem, 1.7rem);
       }
 
       .content div.sobre p {
         text-align: left;
-      } 
+      }
+
+      .content article {
+        height: clamp(200px, 400px, 600px);
+        padding: 30px;
+        background-image: url("../assets/images/fundo/background-02.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        border: 2px outset rgba(255, 0, 0, 0.281);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: aliceblue;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.342);
+      }
+
+      .content article h2,
+      .content article ul {
+        font-size: 1rem;
+        max-width: 30%;
+        text-align: left;
+        margin: 15px;
+      }
+
+      .content article h2 {
+        background-image: linear-gradient(to left, #f9d423 10%, #ff4e50 100%);
+        font-size: 1.5rem;
+      }
+
+      .content article ul li {
+        margin-bottom: 1.2rem;
+      }
+
+      .content .gradiante {
+        color: transparent;
+        background-image: linear-gradient(to left, rgb(249, 212, 35) 10%, rgb(255, 78, 80) 100%);
+        -webkit-background-clip: text;
+      }
+
+      .content .barra {
+        height: 30px;
+        padding: 20px;
+        margin-bottom: 30px;
+        border: 2px solid red;
+        border-radius: 30px;
+        box-shadow: inset 3px 4px 6px rgba(66, 0, 0, 0.288);
+
+        color: rgb(184, 84, 84);
+        font-size: 1.1rem;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      .content .barra span {
+        color: red;
+        font-weight: bold;
+        transition: 0.5s;
+      }
+
+      .content .barra span:hover {
+        color: transparent;
+        background-image: linear-gradient(to left, rgb(249, 212, 35) 10%, rgb(255, 78, 80) 100%);
+        -webkit-background-clip: text;
+      }
     </style>
   </head>
   <body>
@@ -106,7 +176,7 @@
               </li>
             </ul>
           </article>
-          <h2>Nosso diferencial:</h2>
+          <h2 class="gradiante">Nosso diferencial:</h2>
           <div class="barra">
             <span class="destaque">Atendimento humanizado:</span> Tratamos cada
             paciente de forma única, com respeito e empatia.

@@ -60,6 +60,16 @@ body {
   color: white;
 }
 
+.menu ul.navegation li a:hover {
+  text-decoration: underline;
+}
+
+.menu ul.navegation li a[href="#"] {
+ color: transparent;
+  background-image: linear-gradient(to left, rgb(249, 212, 35) 15%, rgb(250, 137, 139) 100%);
+  -webkit-background-clip: text;
+}
+
 .header {
   min-height: 150px;
 }

@@ -11,6 +11,67 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="../assets/styles/base.css" />
+    <style>
+      table {
+        margin: auto;
+        width: clamp(10rem, 800px, 1000px);
+        height: clamp(100px, 400px, 600px);
+        border-collapse: collapse;
+      }
+
+      td,
+      th {
+        border-spacing: 0px;
+        border: 1px solid transparent;
+      }
+
+      table tbody td  {
+        border-image: linear-gradient(
+            to left,
+            rgb(249, 212, 35) 10%,
+            rgb(255, 78, 80) 100%
+          );
+          border-image-slice: 10 ;          
+      }
+
+      tr th {
+        padding: 10px 0px;
+      }
+
+      caption {
+        color: transparent;
+        padding-bottom: 10px;
+
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        background-image: linear-gradient(
+          to left,
+          rgb(249, 212, 35) 10%,
+          rgb(255, 78, 80) 100%
+        );
+        -webkit-background-clip: text;
+      }
+
+      thead {
+        color: white;
+        font-weight: bold;
+        border-color: transparent;
+        background-image: linear-gradient(
+          to left,
+          rgb(249, 212, 35) 10%,
+          rgb(255, 78, 80) 100%
+        );
+      }
+
+      thead th.serviços {
+        border-radius: 20px 0px 0px 0px;
+      }
+
+      thead th.feriados {
+        border-radius: 0px 20px 0px 0px;
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -33,7 +94,6 @@
               src="../assets/images/header-horarios.png"
               alt="header-horarios"
             />
-            
           </div>
           <!-- Fim do header -->
         </div>
@@ -43,37 +103,40 @@
           <div id="custos-de-serviços">
             <h2>Nossos serviços contem preços acessíveis para cada serviço</h2>
             <table id="preços">
+              <caption>
+                Preços de serviços
+              </caption>
               <thead>
                 <tr>
-                  <th>Serviços</th>
+                  <th class="serviços">Serviços</th>
                   <th>Segunda a Sexta</th>
                   <th>Sábados</th>
-                  <th>Feriados</th>
+                  <th class="feriados">Feriados</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>Clínica geral</td>
-                  <td>08h - 19h</td>
-                  <td>08h - 14h</td>
-                  <td>08h - 14h</td>
+                  <td>R$ 40,00</td>
+                  <td>R$ 55,00</td>
+                  <td>R$ 80,00</td>
                 </tr>
                 <tr>
                   <td>Psicologia</td>
-                  <td>08h - 19h</td>
-                  <td>08h - 14h</td>
-                  <td>08h - 14h</td>
+                  <td>R$ 65,00</td>
+                  <td>R$ 80,00</td>
+                  <td>R$ 110,00</td>
                 </tr>
                 <tr>
                   <td>Pediatria</td>
-                  <td>08h - 19h</td>
-                  <td>08h - 18h</td>
+                  <td>R$ 45,00</td>
+                  <td>R$ 55,00</td>
                   <td>-</td>
                 </tr>
                 <tr>
                   <td>Oftalmologia</td>
-                  <td>08h - 19h</td>
-                  <td>08h - 18h</td>
+                  <td>R$ 45,00</td>
+                  <td>R$ 55,00</td>
                   <td>-</td>
                 </tr>
               </tbody>
@@ -85,12 +148,15 @@
               inclusive feriados.
             </h2>
             <table id="horários">
+              <caption>
+                Horários de atendimento
+              </caption>
               <thead>
                 <tr>
-                  <th>Serviços</th>
+                  <th class="serviços">Serviços</th>
                   <th>Segunda a Sexta</th>
                   <th>Sábados</th>
-                  <th>Feriados</th>
+                  <th class="feriados">Feriados</th>
                 </tr>
               </thead>
               <tbody>
