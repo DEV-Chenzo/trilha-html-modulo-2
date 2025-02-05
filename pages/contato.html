@@ -11,6 +11,124 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="../assets/styles/base.css" />
+    <style>
+      .content {
+        background-color: rgb(254, 232, 232);
+      }
+
+      #contact {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px;
+        gap: 20px;
+
+        border-radius: 0px 20px 30px 40px;
+        background-color: rgb(250, 143, 143);
+        margin-bottom: 50px;
+      }
+
+      #contact h2 {
+        color: white;
+        font-weight: border;
+        font-size: 1.4rem;
+        text-shadow: 2px 3px 5px rgba(236, 0, 0, 0.452);
+        margin-right: 40px;
+      }
+
+      .box-contact {
+        width: 168px;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 20px;
+        background-image: linear-gradient(
+          to left,
+          rgb(250, 117, 107) 10%,
+          rgb(250, 14, 18) 100%
+        );
+
+        box-shadow: 2px 2px 3px rgba(223, 6, 6, 0.418);
+        font-family: var(--font-secondary);
+        font-weight: bolder;
+        font-size: 1.2rem;
+      }
+
+      #location {
+        border: 1px solid red;
+        border-radius: 15px;
+        background-image: none;
+        position: relative;
+      }
+
+      #location h2 {
+        position: absolute;
+        top: -20px;
+        left: 0;
+        display: inline-block;
+        color: white;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0px;
+        border-radius: 14px 14px 0px 0px;
+        text-shadow: 2px 1px 4px rgba(248, 0, 0, 0.404);
+        background-image: linear-gradient(
+          to left,
+          rgb(228, 124, 124) 10%,
+          rgb(250, 29, 33) 100%
+        );
+      }
+
+      #location p {
+        color: transparent;
+        margin-top: 70px;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(
+          to left,
+          rgb(250, 232, 67) 10%,
+          rgb(250, 29, 33) 100%
+        );
+
+        font-weight: bolder;
+        font-family: var(--font-secondary);
+        font-style: italic;
+      }
+
+      aside {
+        height: clamp(100%, 600px, 800px);
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+
+        grid-template-areas:
+          "form picture"
+          "form picture";
+      }
+
+      .formulario {
+        grid-area: form;
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        flex-direction: column;
+      }
+
+      .formulario form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      #imagens {
+        grid-area: picture;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #imagens picture img {
+        width: 400px;
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -22,7 +140,7 @@
           <li>
             <a href="horario-de-atendimento.html">Horário de atendimento</a>
           </li>
-          <li><a href="#" >Contato</a></li>
+          <li><a href="#">Contato</a></li>
         </ul>
       </div>
 
@@ -60,7 +178,9 @@
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-            <div id="formulario">
+          </div>
+          <aside>
+            <div class="formulario">
               <h1>Cadastre-se Aqui</h1>
               <form action="#">
                 <input type="text" placeholder="Nome" />
@@ -71,7 +191,21 @@
                 <button type="submit">Enviar</button>
               </form>
             </div>
-          </div>
+            <div id="imagens">
+              <picture class="pessoas-02">
+                <img
+                  src="../assets/images/sem-fundo/pessoas-semfunfo-02.png"
+                  alt="pessoas-semfunfo-02"
+                />
+              </picture>
+              <picture class="pessoas-03">
+                <img
+                  src="../assets/images/sem-fundo/pessoas-semfunfo-03.png"
+                  alt="pessoas-semfunfo-03"
+                />
+              </picture>
+            </div>
+          </aside>
           <!-- Fim do conteúdo -->
         </div>
 
